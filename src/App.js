@@ -26,13 +26,15 @@ function App() {
       <header className="App-header">
         STAR WARS STARSHIPS
       </header>
-      {getStarship.results.map(result => 
+      <div className="card-container">
+        {getStarship.results.map(result => 
           <div className="StarshipCards">
             <StarshipCard 
               name={result.name}
             />
           </div>
         )}
+      </div>
     </div>
   );
 }
