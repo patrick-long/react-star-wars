@@ -6,7 +6,7 @@ import StarshipCard from './Components/StarshipCard/StarshipCard';
 function App() {
 
   const [getStarship, setStarship] = useState({
-    results: null
+    results: []
   });
 
   const getAppData = async () => {
